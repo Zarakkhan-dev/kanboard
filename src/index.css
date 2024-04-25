@@ -1,0 +1,20 @@
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.CardForm{
+  width: 100%;
+  }
+@media only screen and (max-width: 600px) {
+  .CardForm{
+  background-color: white;
+  }
+  .Workplace-Bar{
+    
+  }
+}

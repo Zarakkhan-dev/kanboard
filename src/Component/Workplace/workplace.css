@@ -1,0 +1,58 @@
+.form-Board-add {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: #b9c1ca;
+    padding: 2vh;
+    margin-left: 1vh;
+    border-radius: 15px;
+    visibility: hidden;
+    animation: fadeInOut 1s ease initial;
+    opacity: 0;
+    z-index: -1;
+}
+.Active-Board-Add {
+    left: 100%;
+    visibility: visible;
+    animation: fadeInOut 1s 1 alternate;
+    opacity: 1;
+    z-index: 999;
+}
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.workplace-name {
+    overflow-y: hidden;
+}
+.workplace-name:hover {
+    overflow-y: auto;
+}
+.workplace-name::-webkit-scrollbar {
+    width: 5px !important;
+    height: 30px !important;
+}
+.workplace-name::-webkit-scrollbar-track {
+    background: none;
+}
+
+.workplace-name::-webkit-scrollbar-thumb {
+    background: rgb(82, 81, 81);
+    border-radius: 5px;
+}
+@media only screen and (max-width: 600px) { 
+    .Active-Board-Add {
+        left: 20%;
+    }
+
+}
